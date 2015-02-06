@@ -1,0 +1,8 @@
+# Creative Tabs
+itemGroup.fruitcharcoal=Fruit Charcoal
+
+# Items
+item.fruitcharcoal:potatoCharcoal.name=Potato Charcoal
+
+#Blocks
+tile.fruitcharcoal:potatoCharcoal.name=Potato Charcoal Block
