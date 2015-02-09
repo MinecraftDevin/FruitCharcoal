@@ -1,4 +1,5 @@
 package com.minecraftdevin.fruitcharcoal.block;
+import com.minecraftdevin.fruitcharcoal.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -14,28 +15,36 @@ public class BlockPumpkinCharcoal extends BlockHelper {
     }
 
     @SideOnly(Side.CLIENT)
-    private IIcon[] icons;
-
+    public static IIcon sideIcon;
     @SideOnly(Side.CLIENT)
-    @Override
-    public void registerBlockIcons(IIconRegister par1IconRegister) {
-        icons = new IIcon[4];
+    public static IIcon topIcon;
+    @SideOnly(Side.CLIENT)
+    public static IIcon bottomIcon;
+    @SideOnly(Side.CLIENT)
+    public static IIcon frontIcon;
 
-        for (int i = 0; i < icons.length; i++) {
-            icons[i] = par1IconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())) + "_" + i);
-            //icons[i] = par1IconRegister.registerIcon(Reference.MOD_ID + ":" + "pumpkinCharcoal_top");
-        }
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerBlockIcons(IIconRegister icon){
+        sideIcon = icon.registerIcon(Reference.MOD_ID + ":pumpkinCharcoal_4");
+        topIcon = icon.registerIcon(Reference.MOD_ID + ":pumpkinCharcoal_1");
+        bottomIcon = icon.registerIcon(Reference.MOD_ID + ":pumpkinCharcoal_2");
+        frontIcon = icon.registerIcon(Reference.MOD_ID + ":pumpkinCharcoal_3");
     }
 
+    @Override
     @SideOnly(Side.CLIENT)
-    public IIcon getIcon(int par1) {
-        switch (par1) {
-            case 0:
-                return icons[1];
-            case 1:
-                return icons[2];
-            default:
-                return icons[3];
+    public IIcon getIcon(int side, int meta){
+        if(side == 3){
+            return frontIcon;
+        }
+        if(side == 1){
+            return topIcon;
+        }
+        if(side == 0){
+            return bottomIcon;
+        } else {
+            return sideIcon;
         }
     }
 }
