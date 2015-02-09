@@ -14,9 +14,10 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 
+import java.sql.Ref;
 import java.util.logging.Logger;
 
-@Mod(modid="FruitCharcoal",name="Fruit Charcoal",version="1.0")
+@Mod(modid=Reference.MOD_ID,name=Reference.MOD_NAME,version=Reference.VERSION)
 public class FruitCharcoal {
 
     @Mod.Instance("FruitCharcoal")

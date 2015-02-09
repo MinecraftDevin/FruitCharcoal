@@ -3,12 +3,13 @@ package com.minecraftdevin.fruitcharcoal.item;
 import com.minecraftdevin.fruitcharcoal.creativetab.CreativeTabHelper;
 import com.minecraftdevin.fruitcharcoal.reference.Names;
 
-public class ItemPotatoCharcoal extends ItemHelper
+public class ItemCarrotCharcoal extends ItemHelper
 {
-    public ItemPotatoCharcoal()
+    public ItemCarrotCharcoal()
     {
         super();
-        this.setUnlocalizedName(Names.Items.POTATO_CHARCOAL);
+        this.setUnlocalizedName(Names.Items.CARROT_CHARCOAL);
         this.setCreativeTab(CreativeTabHelper.FruitCharcoalCreativeTab);
+
     }
 }

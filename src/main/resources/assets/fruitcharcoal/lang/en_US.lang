@@ -3,6 +3,11 @@ itemGroup.fruitcharcoal=Fruit Charcoal
 
 # Items
 item.fruitcharcoal:potatoCharcoal.name=Potato Charcoal
+item.fruitcharcoal:sugarcaneCharcoal.name=Sugarcane Charcoal
+item.fruitcharcoal:eggCharcoal.name=Egg Charcoal
+item.fruitcharcoal:appleCharcoal.name=Apple Charcoal
+item.fruitcharcoal:carrotCharcoal.name=[Parcel give me textures! :(] Carrot Charcoal
 
 #Blocks
-tile.fruitcharcoal:potatoCharcoal.name=Potato Charcoal Block
+tile.fruitcharcoal:pumpkinCharcoal.name=[Broken Textures] Pumpkin Charcoal Block
+tile.fruitcharcoal:melonCharcoal.name=[Broken Textures] Melon Charcoal Block
