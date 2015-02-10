@@ -16,6 +16,7 @@ public class BlockPumpkinCharcoal extends BlockHelper {
         super(Material.gourd);
         this.setBlockName("pumpkinCharcoal");
         setHardness(1.0F);
+        setStepSound(soundTypeWood);
     }
     @SideOnly(Side.CLIENT)
     public static IIcon sideIcon;

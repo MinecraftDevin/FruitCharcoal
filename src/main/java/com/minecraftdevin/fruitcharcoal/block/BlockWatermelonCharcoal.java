@@ -15,6 +15,7 @@ public class BlockWatermelonCharcoal extends BlockHelper
         this.setBlockName("watermelonCharcoal");
         setHardness(0.5F);
         setResistance(3.0F);
+        setStepSound(soundTypeWood);
 
     }
     @SideOnly(Side.CLIENT)
