@@ -15,10 +15,7 @@ public class BlockHelper extends Block
         super(material);
         this.setCreativeTab(CreativeTabHelper.FruitCharcoalCreativeTab);
     }
-    public BlockHelper()
-    {
-        this(Material.rock);
-    }
+    public BlockHelper() { this(Material.rock); }
     @Override
     public String getUnlocalizedName()
     {
