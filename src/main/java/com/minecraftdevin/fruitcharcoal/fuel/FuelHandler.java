@@ -23,6 +23,7 @@ public class FuelHandler implements IFuelHandler {
         if (fuel.isItemEqual(new ItemStack(ModItems.eggCharcoal))) { return 300; }
         // Carrot Charcoal
         if (fuel.isItemEqual(new ItemStack(ModItems.carrotCharcoal))) { return 300; }
+		if (fuel.isItemEqual(new ItemStack(ModItems.cactusCharcoal))) { return 300; }
         else { return 0; }
 
 

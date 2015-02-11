@@ -4,6 +4,7 @@ import com.minecraftdevin.fruitcharcoal.init.ModBlocks;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.ItemColored;
 import net.minecraft.item.ItemStack;
 
 public class Recipes
@@ -31,6 +32,9 @@ public class Recipes
 
         // Carrot Charcoal
         GameRegistry.addSmelting(Items.carrot, new ItemStack(ModItems.carrotCharcoal), 0.1F);
+
+        // Cactus Charcoal
+        GameRegistry.addSmelting(new ItemStack(Items.dye,1,2), new ItemStack(ModItems.cactusCharcoal), 0.1F);
 
 
     }
