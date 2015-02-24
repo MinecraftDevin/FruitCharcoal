@@ -9,6 +9,7 @@ public final class Names {
         public static final String EGG_CHARCOAL = "eggCharcoal";
         public static final String CARROT_CHARCOAL = "carrotCharcoal";
         public static final String CACTUS_CHARCOAL = "cactusCharcoal";
+        public static final String CHARCOAL_CHARCOAL = "charcoalCharcoal";
     }
 
     public static final class Blocks

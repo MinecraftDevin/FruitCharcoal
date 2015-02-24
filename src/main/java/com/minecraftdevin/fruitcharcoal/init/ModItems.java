@@ -15,6 +15,7 @@ public class ModItems
     public static final ItemHelper eggCharcoal = new ItemEggCharcoal();
     public static final ItemHelper carrotCharcoal = new ItemCarrotCharcoal();
     public static final ItemHelper cactusCharcoal = new ItemCactusCharcoal();
+    public static final ItemHelper charcoalCharcoal = new ItemCharcoalCharcoal();
 
     public static void init()
     {
@@ -24,5 +25,6 @@ public class ModItems
         GameRegistry.registerItem(eggCharcoal, Names.Items.EGG_CHARCOAL);
         GameRegistry.registerItem(carrotCharcoal, Names.Items.CARROT_CHARCOAL);
         GameRegistry.registerItem(cactusCharcoal, Names.Items.CACTUS_CHARCOAL);
+        GameRegistry.registerItem(charcoalCharcoal, Names.Items.CHARCOAL_CHARCOAL);
     }
 }
