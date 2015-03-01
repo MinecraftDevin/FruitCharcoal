@@ -8,6 +8,7 @@ item.fruitcharcoal:eggCharcoal.name=Egg Charcoal
 item.fruitcharcoal:appleCharcoal.name=Apple Charcoal
 item.fruitcharcoal:carrotCharcoal.name=[Missing Texture] Carrot Charcoal
 item.fruitcharcoal:cactusCharcoal.name=[Missing Texture] Cactus Charcoal
+item.fruitcharcoal:charcoalCharcoal.name=[Missing Texture] Charcoal Charcoal
 
 #Blocks
 tile.fruitcharcoal:pumpkinCharcoal.name=Pumpkin Charcoal Block

@@ -36,6 +36,9 @@ public class Recipes
         // Cactus Charcoal
         GameRegistry.addSmelting(new ItemStack(Items.dye,1,2), new ItemStack(ModItems.cactusCharcoal), 0.1F);
 
+        // Charcoal Charcoal
+        GameRegistry.addSmelting(new ItemStack(Items.coal,1,1), new ItemStack(ModItems.charcoalCharcoal), 0.1F);
+
 
     }
 }
