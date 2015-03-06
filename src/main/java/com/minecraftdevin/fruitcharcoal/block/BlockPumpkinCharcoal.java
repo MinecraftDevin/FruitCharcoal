@@ -42,13 +42,13 @@ public class BlockPumpkinCharcoal extends BlockHelper {
         if (side == 1) {
             return topIcon;
         }
-        if ((metadata & 7) == side) {
-            return frontIcon;
-        }
         if (side == 0) {
             return bottomIcon;
         }
         if (side == 3) {
+            return frontIcon;
+        }
+        if ((metadata & 7) == side) {
             return frontIcon;
         }
         else { return this.sideIcon; }
