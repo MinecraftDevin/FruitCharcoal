@@ -1,14 +1,18 @@
 package com.minecraftdevin.fruitcharcoal.block;
 import com.minecraftdevin.fruitcharcoal.reference.Reference;
+import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
+import net.minecraftforge.event.ServerChatEvent;
+import org.apache.logging.log4j.Level;
 
 public class BlockPumpkinCharcoal extends BlockHelper {
     public BlockPumpkinCharcoal()
@@ -39,25 +43,23 @@ public class BlockPumpkinCharcoal extends BlockHelper {
     @SideOnly(Side.CLIENT)
     @Override
     public IIcon getIcon(int side, int metadata) {
-        if (side == 1) {
-            return topIcon;
-        }
-        if (side == 0) {
-            return bottomIcon;
-        }
-        if (side == 3) {
-            return frontIcon;
-        }
         if ((metadata & 7) == side) {
             return frontIcon;
         }
-        else { return this.sideIcon; }
-
+        switch(side) {
+            case 0:
+                return bottomIcon;
+            case 1:
+                return topIcon;
+            default:
+                return sideIcon;
+        }
     }
     @Override
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack itemstack) {
         int whichDirectionFacing = MathHelper.floor_double((double) (entity.rotationYaw * 4.0F / 360.0F) + 2.5D) & 3;
         int blockSideWithFace = whichDirectionFacing;
+        FMLLog.log(Reference.MOD_ID, Level.INFO, "Pumpkin Block placed, Side: " + whichDirectionFacing + ", Block Side with face: " + blockSideWithFace);
         if (whichDirectionFacing == 0)
             blockSideWithFace = 3;
         else if (whichDirectionFacing == 1)
