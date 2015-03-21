@@ -4,6 +4,7 @@ import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemBlock;
@@ -11,6 +12,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
+import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.event.ServerChatEvent;
 import org.apache.logging.log4j.Level;
 
@@ -43,23 +45,22 @@ public class BlockPumpkinCharcoal extends BlockHelper {
     @SideOnly(Side.CLIENT)
     @Override
     public IIcon getIcon(int side, int metadata) {
-        if ((metadata & 7) == side) {
+        if ((side == 3) && (metadata == 0)) { return frontIcon; }
+        else if ((side == 1) || (side == 0)) { return topIcon; }
+        else if ((metadata & 7) == side) {
             return frontIcon;
         }
-        switch(side) {
-            case 0:
-                return bottomIcon;
-            case 1:
-                return topIcon;
-            default:
-                return sideIcon;
-        }
+        else { return sideIcon; }
     }
     @Override
     public void onBlockPlacedBy(World world, int x, int y, int z, EntityLivingBase entity, ItemStack itemstack) {
         int whichDirectionFacing = MathHelper.floor_double((double) (entity.rotationYaw * 4.0F / 360.0F) + 2.5D) & 3;
         int blockSideWithFace = whichDirectionFacing;
-        FMLLog.log(Reference.MOD_ID, Level.INFO, "Pumpkin Block placed, Side: " + whichDirectionFacing + ", Block Side with face: " + blockSideWithFace);
+        //int height = y;
+        // int X_COORD = x;
+        // int Z_COORD = z;
+        //FMLLog.log(Reference.MOD_ID, Level.INFO, "Coordinates: Y: " + height + " Side with face: " + blockSideWithFace);
+        //Minecraft.getMinecraft().thePlayer.sendChatMessage("X: " + X_COORD + " Y: " + height + " Z: " + Z_COORD);
         if (whichDirectionFacing == 0)
             blockSideWithFace = 3;
         else if (whichDirectionFacing == 1)
@@ -67,8 +68,10 @@ public class BlockPumpkinCharcoal extends BlockHelper {
         else if (whichDirectionFacing == 3)
             blockSideWithFace = 5;
 
+
         world.setBlockMetadataWithNotify(x, y, z, blockSideWithFace, 2);
     }
+
 
 
 
