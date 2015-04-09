@@ -1,4 +1,5 @@
 package com.minecraftdevin.fruitcharcoal.init;
+import com.minecraftdevin.fruitcharcoal.Configuration.ConfigurationHelper;
 import com.minecraftdevin.fruitcharcoal.block.BlockHelper;
 import com.minecraftdevin.fruitcharcoal.block.BlockPumpkinCharcoal;
 import com.minecraftdevin.fruitcharcoal.block.BlockWatermelonCharcoal;
@@ -10,8 +11,10 @@ public class ModBlocks
     public static final BlockHelper watermelonCharcoalBlock = new BlockWatermelonCharcoal();
     public static void init()
     {
-        GameRegistry.registerBlock(pumpkinCharcoalBlock, "pumpkinCharcoalBlock");
-        GameRegistry.registerBlock(watermelonCharcoalBlock, "watermelonCharcoalBlock");
+        if (!ConfigurationHelper.Realism) {
+            GameRegistry.registerBlock(pumpkinCharcoalBlock, "pumpkinCharcoalBlock");
+            GameRegistry.registerBlock(watermelonCharcoalBlock, "watermelonCharcoalBlock");
+        }
 
     }
 

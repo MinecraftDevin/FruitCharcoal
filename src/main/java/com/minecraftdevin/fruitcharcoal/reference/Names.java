@@ -10,6 +10,8 @@ public final class Names {
         public static final String CARROT_CHARCOAL = "carrotCharcoal";
         public static final String CACTUS_CHARCOAL = "cactusCharcoal";
         public static final String CHARCOAL_CHARCOAL = "charcoalCharcoal";
+        public static final String BIOFUEL = "itemBiofuel";
+        public static final String BIOFUEL_BITS = "itemBiofuelBits";
     }
 
     public static final class Blocks

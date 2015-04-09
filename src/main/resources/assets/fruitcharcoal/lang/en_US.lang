@@ -9,6 +9,8 @@ item.fruitcharcoal:appleCharcoal.name=Apple Charcoal
 item.fruitcharcoal:carrotCharcoal.name=Carrot Charcoal
 item.fruitcharcoal:cactusCharcoal.name=Cactus Charcoal
 item.fruitcharcoal:charcoalCharcoal.name=Charcoal Charcoal
+item.fruitcharcoal:itemBiofuel.name=Biofuel
+item.fruitcharcoal:itemBiofuelBits.name=Biofuel Bits
 
 #Blocks
 tile.fruitcharcoal:pumpkinCharcoal.name=Pumpkin Charcoal Block
