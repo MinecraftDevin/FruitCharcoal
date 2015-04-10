@@ -15,3 +15,13 @@ item.fruitcharcoal:itemBiofuelBits.name=Biofuel Bits
 #Blocks
 tile.fruitcharcoal:pumpkinCharcoal.name=Pumpkin Charcoal Block
 tile.fruitcharcoal:watermelonCharcoal.name=Melon Charcoal Block
+
+#CompressedBlocks
+tile.fruitcharcoal:potatoCompressed.name=Compressed Potato Charcoal Block
+tile.fruitcharcoal:sugarcaneCompressed.name=Compressed Sugarcane Charcoal Block
+tile.fruitcharcoal:eggCompressed.name=Compressed Egg Charcoal Block
+tile.fruitcharcoal:appleCompressed.name=Compressed Apple Charcoal Block
+tile.fruitcharcoal:carrotCompressed.name=Compressed Carrot Charcoal Block
+tile.fruitcharcoal:cactusCompressed.name=Compressed Cactus Charcoal Block
+tile.fruitcharcoal:pumpkinCompressed.name=Compressed Pumpkin Charcoal Block
+tile.fruitcharcoal:watermelonCompressed.name=Compressed Melon Charcoal Block

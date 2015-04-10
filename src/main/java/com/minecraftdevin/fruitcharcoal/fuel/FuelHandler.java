@@ -12,56 +12,43 @@ import javax.security.auth.callback.ConfirmationCallback;
 public class FuelHandler implements IFuelHandler {
 
     public int getBurnTime(ItemStack fuel) {
+        int potato_charcoal = 600;
+        int watermelon_charcoal = 600;
+        int pumpkin_charcoal = 550;
+        int sugarcane_charcoal = 350;
+        int apple_charcoal = 450;
+        int egg_charcoal = 350;
+        int carrot_charcoal = 400;
+        int cactus_charcoal = 800;
+        int charcoal_charcoal = 2200;
+
         ItemStack itemStack = fuel;
         if (!ConfigurationHelper.Realism) {
-            if (fuel.isItemEqual(new ItemStack(ModItems.potatoCharcoal))) {
-                return 450;
-            }
-            // Watermelon Charcoal
-            if (fuel.isItemEqual(new ItemStack(ModBlocks.watermelonCharcoalBlock))) {
-                return 600;
-            }
-            // Pumpkin Charcoal
-            if (fuel.isItemEqual(new ItemStack(ModBlocks.pumpkinCharcoalBlock))) {
-                return 550;
-            }
-            // Sugarcane Charcoal
-            if (fuel.isItemEqual(new ItemStack(ModItems.sugarcaneCharcoal))) {
-                return 250;
-            }
-            // Apple Charcoal
-            if (fuel.isItemEqual(new ItemStack(ModItems.appleCharcoal))) {
-                return 350;
-            }
-            // Egg Charcoal
-            if (fuel.isItemEqual(new ItemStack(ModItems.eggCharcoal))) {
-                return 300;
-            }
-            // Carrot Charcoal
-            if (fuel.isItemEqual(new ItemStack(ModItems.carrotCharcoal))) {
-                return 300;
-            }
-            if (fuel.isItemEqual(new ItemStack(ModItems.cactusCharcoal))) {
-                return 300;
-            }
-            // Charcoal Charcoal
-            if (fuel.isItemEqual(new ItemStack(ModItems.charcoalCharcoal))) {
-                return 2200;
-            } else {
-                return 0;
-            }
+            if (fuel.isItemEqual(new ItemStack(ModItems.potatoCharcoal))) { return potato_charcoal; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.watermelonCharcoalBlock))) { return watermelon_charcoal; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.pumpkinCharcoalBlock))) { return pumpkin_charcoal; }
+            if (fuel.isItemEqual(new ItemStack(ModItems.sugarcaneCharcoal))) { return sugarcane_charcoal; }
+            if (fuel.isItemEqual(new ItemStack(ModItems.appleCharcoal))) { return apple_charcoal; }
+            if (fuel.isItemEqual(new ItemStack(ModItems.eggCharcoal))) { return egg_charcoal; }
+            if (fuel.isItemEqual(new ItemStack(ModItems.carrotCharcoal))) { return carrot_charcoal; }
+            if (fuel.isItemEqual(new ItemStack(ModItems.cactusCharcoal))) { return cactus_charcoal; }
+            if (fuel.isItemEqual(new ItemStack(ModItems.charcoalCharcoal))) { return charcoal_charcoal; }
+            // Compressed Blocks.
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.appleCompressedBlock))) { return apple_charcoal * 10; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.cactusCompressedBlock))) { return cactus_charcoal * 10; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.carrotCompressedBlock))) { return carrot_charcoal * 10; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.eggCompressedBlock))) { return egg_charcoal * 10; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.potatoCompressedBlock))) { return potato_charcoal * 10; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.pumpkinCompressedBlock))) { return pumpkin_charcoal * 10; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.sugarcaneCompressedBlock))) { return sugarcane_charcoal * 10; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.watermelonCompressedBlock))) { return watermelon_charcoal * 10; }
+
+
         }
         if (ConfigurationHelper.Realism) {
-            if (fuel.isItemEqual(new ItemStack(ModItems.biofuelBits))) {
-                return ConfigurationHelper.BiofuelBitBurnTime;
-            }
-            if (fuel.isItemEqual(new ItemStack(ModItems.biofuel))) {
-                return ConfigurationHelper.BiofuelBurnTime;
-            }
-            else {
-                return 0;
-            }
-        }
-        else { return 0; }
+            if (fuel.isItemEqual(new ItemStack(ModItems.biofuelBits))) { return ConfigurationHelper.BiofuelBitBurnTime; }
+            if (fuel.isItemEqual(new ItemStack(ModItems.biofuel))) { return ConfigurationHelper.BiofuelBurnTime; }
+            else { return 0; }
+        } else { return 0; }
     }
 }

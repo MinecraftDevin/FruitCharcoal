@@ -19,4 +19,7 @@ public final class Names {
         public static final String WATERMELON_CHARCOAL_BLOCK = "watermelonCharcoalBlock";
         public static final String PUMPKIN_CHARCOAL_BLOCK = "potatoCharcoalBlock";
     }
+    public static final class CompressedBlocks {
+        public static final String APPLE_COMPRESSED_BLOCK = "appleCompressedBlock";
+    }
 }

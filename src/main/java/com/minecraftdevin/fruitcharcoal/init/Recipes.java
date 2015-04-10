@@ -15,33 +15,24 @@ public class Recipes
     public static void init()
     {
         if (!ConfigurationHelper.Realism) {
-            // Potato Charcoal
             GameRegistry.addSmelting(Items.baked_potato, new ItemStack(ModItems.potatoCharcoal), 0.1F);
-
-            // Melon Charcoal
-            // -- Add blocks.
             GameRegistry.addSmelting(Blocks.melon_block, new ItemStack(ModBlocks.watermelonCharcoalBlock), 0.1F);
-
-            // Pumpkin Charcoal
             GameRegistry.addSmelting(Blocks.pumpkin, new ItemStack(ModBlocks.pumpkinCharcoalBlock), 0.1F);
-
-            // Sugarcane Charcoal
             GameRegistry.addSmelting(Items.reeds, new ItemStack(ModItems.sugarcaneCharcoal), 0.1F);
-
-            // Apple Charcoal
             GameRegistry.addSmelting(Items.apple, new ItemStack(ModItems.appleCharcoal), 0.1F);
-
-            // Egg Charcoal
             GameRegistry.addSmelting(Items.egg, new ItemStack(ModItems.eggCharcoal), 0.1F);
-
-            // Carrot Charcoal
             GameRegistry.addSmelting(Items.carrot, new ItemStack(ModItems.carrotCharcoal), 0.1F);
-
-            // Cactus Charcoal
             GameRegistry.addSmelting(new ItemStack(Items.dye, 1, 2), new ItemStack(ModItems.cactusCharcoal), 0.1F);
-
-            // Charcoal Charcoal
             GameRegistry.addSmelting(new ItemStack(Items.coal, 1, 1), new ItemStack(ModItems.charcoalCharcoal), 0.1F);
+            // Compressed Blocks
+            GameRegistry.addSmelting(ModItems.appleCharcoal, new ItemStack(ModBlocks.appleCompressedBlock), 0.2F);
+            GameRegistry.addSmelting(ModItems.cactusCharcoal, new ItemStack(ModBlocks.cactusCompressedBlock), 0.2F);
+            GameRegistry.addSmelting(ModItems.carrotCharcoal, new ItemStack(ModBlocks.carrotCompressedBlock), 0.2F);
+            GameRegistry.addSmelting(ModItems.eggCharcoal, new ItemStack(ModBlocks.eggCompressedBlock), 0.2F);
+            GameRegistry.addSmelting(ModItems.potatoCharcoal, new ItemStack(ModBlocks.potatoCompressedBlock), 0.2F);
+            GameRegistry.addSmelting(ModBlocks.pumpkinCharcoalBlock, new ItemStack(ModBlocks.pumpkinCompressedBlock), 0.2F);
+            GameRegistry.addSmelting(ModItems.sugarcaneCharcoal, new ItemStack(ModBlocks.sugarcaneCompressedBlock), 0.2F);
+            GameRegistry.addSmelting(ModBlocks.watermelonCharcoalBlock, new ItemStack(ModBlocks.watermelonCompressedBlock), 0.2F);
         }
         if (ConfigurationHelper.Realism) {
             GameRegistry.addSmelting(Items.baked_potato, new ItemStack(ModItems.biofuelBits,ConfigurationHelper.PotatoBiofuel), 0.1F);
