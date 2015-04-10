@@ -25,14 +25,14 @@ public class Recipes
             GameRegistry.addSmelting(new ItemStack(Items.dye, 1, 2), new ItemStack(ModItems.cactusCharcoal), 0.1F);
             GameRegistry.addSmelting(new ItemStack(Items.coal, 1, 1), new ItemStack(ModItems.charcoalCharcoal), 0.1F);
             // Compressed Blocks
-            GameRegistry.addSmelting(ModItems.appleCharcoal, new ItemStack(ModBlocks.appleCompressedBlock), 0.2F);
-            GameRegistry.addSmelting(ModItems.cactusCharcoal, new ItemStack(ModBlocks.cactusCompressedBlock), 0.2F);
-            GameRegistry.addSmelting(ModItems.carrotCharcoal, new ItemStack(ModBlocks.carrotCompressedBlock), 0.2F);
-            GameRegistry.addSmelting(ModItems.eggCharcoal, new ItemStack(ModBlocks.eggCompressedBlock), 0.2F);
-            GameRegistry.addSmelting(ModItems.potatoCharcoal, new ItemStack(ModBlocks.potatoCompressedBlock), 0.2F);
-            GameRegistry.addSmelting(ModBlocks.pumpkinCharcoalBlock, new ItemStack(ModBlocks.pumpkinCompressedBlock), 0.2F);
-            GameRegistry.addSmelting(ModItems.sugarcaneCharcoal, new ItemStack(ModBlocks.sugarcaneCompressedBlock), 0.2F);
-            GameRegistry.addSmelting(ModBlocks.watermelonCharcoalBlock, new ItemStack(ModBlocks.watermelonCompressedBlock), 0.2F);
+            GameRegistry.addRecipe(new ItemStack(ModBlocks.appleCompressedBlock), "sss", "sss", "sss", 's', new ItemStack(ModItems.appleCharcoal));
+            GameRegistry.addRecipe(new ItemStack(ModBlocks.cactusCompressedBlock), "sss", "sss", "sss", 's', new ItemStack(ModItems.cactusCharcoal));
+            GameRegistry.addRecipe(new ItemStack(ModBlocks.carrotCompressedBlock), "sss", "sss", "sss", 's', new ItemStack(ModItems.carrotCharcoal));
+            GameRegistry.addRecipe(new ItemStack(ModBlocks.eggCompressedBlock), "sss", "sss", "sss", 's', new ItemStack(ModItems.eggCharcoal));
+            GameRegistry.addRecipe(new ItemStack(ModBlocks.potatoCompressedBlock), "sss", "sss", "sss", 's', new ItemStack(ModItems.potatoCharcoal));
+            GameRegistry.addRecipe(new ItemStack(ModBlocks.pumpkinCompressedBlock), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.pumpkinCharcoalBlock));
+            GameRegistry.addRecipe(new ItemStack(ModBlocks.sugarcaneCompressedBlock), "sss", "sss", "sss", 's', new ItemStack(ModItems.sugarcaneCharcoal));
+            GameRegistry.addRecipe(new ItemStack(ModBlocks.watermelonCompressedBlock), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.watermelonCharcoalBlock));
         }
         if (ConfigurationHelper.Realism) {
             GameRegistry.addSmelting(Items.baked_potato, new ItemStack(ModItems.biofuelBits,ConfigurationHelper.PotatoBiofuel), 0.1F);
