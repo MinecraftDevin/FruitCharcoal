@@ -33,6 +33,16 @@ public class Recipes
             GameRegistry.addRecipe(new ItemStack(ModBlocks.pumpkinCompressedBlock), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.pumpkinCharcoalBlock));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.sugarcaneCompressedBlock), "sss", "sss", "sss", 's', new ItemStack(ModItems.sugarcaneCharcoal));
             GameRegistry.addRecipe(new ItemStack(ModBlocks.watermelonCompressedBlock), "sss", "sss", "sss", 's', new ItemStack(ModBlocks.watermelonCharcoalBlock));
+            // Compressed Blocks -> First stages
+            GameRegistry.addShapelessRecipe(new ItemStack(ModItems.appleCharcoal, 9), new ItemStack(ModBlocks.appleCompressedBlock));
+            GameRegistry.addShapelessRecipe(new ItemStack(ModItems.cactusCharcoal, 9), new ItemStack(ModBlocks.cactusCompressedBlock));
+            GameRegistry.addShapelessRecipe(new ItemStack(ModItems.carrotCharcoal, 9), new ItemStack(ModBlocks.carrotCompressedBlock));
+            GameRegistry.addShapelessRecipe(new ItemStack(ModItems.eggCharcoal, 9), new ItemStack(ModBlocks.eggCompressedBlock));
+            GameRegistry.addShapelessRecipe(new ItemStack(ModItems.eggCharcoal, 9), new ItemStack(ModBlocks.potatoCompressedBlock));
+            GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.pumpkinCharcoalBlock, 9), new ItemStack(ModBlocks.pumpkinCompressedBlock));
+            GameRegistry.addShapelessRecipe(new ItemStack(ModItems.sugarcaneCharcoal, 9), new ItemStack(ModBlocks.sugarcaneCompressedBlock));
+            GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.watermelonCharcoalBlock, 9), new ItemStack(ModBlocks.watermelonCompressedBlock));
+
         }
         if (ConfigurationHelper.Realism) {
             GameRegistry.addSmelting(Items.baked_potato, new ItemStack(ModItems.biofuelBits,ConfigurationHelper.PotatoBiofuel), 0.1F);

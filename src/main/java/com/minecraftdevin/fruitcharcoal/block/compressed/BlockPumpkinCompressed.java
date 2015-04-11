@@ -9,7 +9,5 @@ public class BlockPumpkinCompressed extends BlockHelper {
         this.setBlockName("pumpkinCompressed");
         setHardness(1.0F);
         setResistance(3.0F);
-        setStepSound(soundTypeWood);
-
     }
 }

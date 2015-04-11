@@ -10,7 +10,6 @@ public class BlockPotatoCompressed extends BlockHelper {
         this.setBlockName("potatoCompressed");
         setHardness(1.0F);
         setResistance(3.0F);
-        setStepSound(soundTypeWood);
 
     }
 }

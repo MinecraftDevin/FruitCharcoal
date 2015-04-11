@@ -9,7 +9,6 @@ public class BlockAppleCompressed extends BlockHelper {
         this.setBlockName("appleCompressed");
         setHardness(1.0F);
         setResistance(3.0F);
-        setStepSound(soundTypeWood);
 
     }
 }

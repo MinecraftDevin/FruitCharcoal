@@ -9,7 +9,6 @@ public class BlockCarrotCompressed extends BlockHelper {
         this.setBlockName("carrotCompressed");
         setHardness(1.0F);
         setResistance(3.0F);
-        setStepSound(soundTypeWood);
 
     }
 }
