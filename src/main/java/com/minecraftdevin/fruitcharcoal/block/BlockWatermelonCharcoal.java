@@ -11,7 +11,7 @@ public class BlockWatermelonCharcoal extends BlockHelper
 {
     public BlockWatermelonCharcoal()
     {
-        super();
+        super(Material.gourd);
         this.setBlockName("watermelonCharcoal");
         setHardness(0.5F);
         setResistance(3.0F);
