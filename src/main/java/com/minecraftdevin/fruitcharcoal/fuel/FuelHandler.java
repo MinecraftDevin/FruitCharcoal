@@ -42,6 +42,19 @@ public class FuelHandler implements IFuelHandler {
             if (fuel.isItemEqual(new ItemStack(ModBlocks.pumpkinCompressedBlock))) { return pumpkin_charcoal * 10; }
             if (fuel.isItemEqual(new ItemStack(ModBlocks.sugarcaneCompressedBlock))) { return sugarcane_charcoal * 10; }
             if (fuel.isItemEqual(new ItemStack(ModBlocks.watermelonCompressedBlock))) { return watermelon_charcoal * 10; }
+            // Double Compressed Blocks
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.appleDoubleCompressedBlock))) { return apple_charcoal * 20; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.cactusDoubleCompressedBlock))) { return cactus_charcoal * 20; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.carrotDoubleCompressedBlock))) { return carrot_charcoal * 20; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.eggDoubleCompressedBlock))) { return egg_charcoal * 20; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.potatoDoubleCompressedBlock))) { return potato_charcoal * 20; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.pumpkinDoubleCompressedBlock))) { return pumpkin_charcoal * 20; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.sugarcaneDoubleCompressedBlock))) { return sugarcane_charcoal * 20; }
+            if (fuel.isItemEqual(new ItemStack(ModBlocks.watermelonDoubleCompressedBlock))) { return watermelon_charcoal * 20; }
+            // Charcoal Charcoal
+            if (fuel.isItemEqual(new ItemStack(ModItems.charcoalCharcoalCompressed))) { return 2800; }
+            if (fuel.isItemEqual(new ItemStack(ModItems.charcoalCharcoalCompressedX2))) { return 3400; }
+            if (fuel.isItemEqual(new ItemStack(ModItems.charcoalCharcoalCompressedX3))) { return 4000; }
 
 
         }

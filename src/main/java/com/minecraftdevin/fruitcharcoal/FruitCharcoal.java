@@ -2,10 +2,7 @@ package com.minecraftdevin.fruitcharcoal;
 
 import com.minecraftdevin.fruitcharcoal.Configuration.ConfigurationHelper;
 import com.minecraftdevin.fruitcharcoal.fuel.FuelHandler;
-import com.minecraftdevin.fruitcharcoal.init.ModBlocks;
-import com.minecraftdevin.fruitcharcoal.init.ModItems;
-import com.minecraftdevin.fruitcharcoal.init.Recipes;
-import com.minecraftdevin.fruitcharcoal.init.StateConfigurations;
+import com.minecraftdevin.fruitcharcoal.init.*;
 import com.minecraftdevin.fruitcharcoal.reference.Reference;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.FMLLog;

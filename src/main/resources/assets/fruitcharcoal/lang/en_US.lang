@@ -25,3 +25,18 @@ tile.fruitcharcoal:carrotCompressed.name=Compressed Carrot Charcoal Block
 tile.fruitcharcoal:cactusCompressed.name=Compressed Cactus Charcoal Block
 tile.fruitcharcoal:pumpkinCompressed.name=Compressed Pumpkin Charcoal Block
 tile.fruitcharcoal:watermelonCompressed.name=Compressed Melon Charcoal Block
+
+#Double Compressed
+tile.fruitcharcoal:potatoDoubleCompressed.name=Double Compressed Potato Charcoal Block
+tile.fruitcharcoal:sugarcaneDoubleCompressed.name=Double Compressed Sugarcane Charcoal Block
+tile.fruitcharcoal:eggDoubleCompressed.name=Double Compressed Egg Charcoal Block
+tile.fruitcharcoal:appleDoubleCompressed.name=Double Compressed Apple Charcoal Block
+tile.fruitcharcoal:carrotDoubleCompressed.name=Double Compressed Carrot Charcoal Block
+tile.fruitcharcoal:cactusDoubleCompressed.name=Double Compressed Cactus Charcoal Block
+tile.fruitcharcoal:pumpkinDoubleCompressed.name=Double Compressed Pumpkin Charcoal Block
+tile.fruitcharcoal:watermelonDoubleCompressed.name=Double Compressed Melon Charcoal Block
+
+#Charcoal Charcoals
+item.fruitcharcoal:charcoalCharcoalx2.name=Charcoal Charcoal Charcoal
+item.fruitcharcoal:charcoalCharcoalx3.name=Charcoal Charcoal Charcoal Charcoal
+item.fruitcharcoal:charcoalCharcoalx4.name=Charcoal Charcoal Charcoal Charcoal Charcoal

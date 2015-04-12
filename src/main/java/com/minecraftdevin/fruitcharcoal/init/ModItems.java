@@ -2,10 +2,12 @@ package com.minecraftdevin.fruitcharcoal.init;
 
 import com.minecraftdevin.fruitcharcoal.Configuration.ConfigurationHelper;
 import com.minecraftdevin.fruitcharcoal.item.*;
+import com.minecraftdevin.fruitcharcoal.item.SpecialItems.ItemCharcoalCharcoalX2;
+import com.minecraftdevin.fruitcharcoal.item.SpecialItems.ItemCharcoalCharcoalX3;
+import com.minecraftdevin.fruitcharcoal.item.SpecialItems.ItemCharcoalCharcoalX4;
 import com.minecraftdevin.fruitcharcoal.reference.Names;
 import com.minecraftdevin.fruitcharcoal.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
-import sun.security.krb5.Config;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 
@@ -20,6 +22,12 @@ public class ModItems
     public static final ItemHelper charcoalCharcoal = new ItemCharcoalCharcoal();
     public static final ItemHelper biofuel = new ItemBiofuel();
     public static final ItemHelper biofuelBits = new ItemBiofuelBits();
+    // Compressed Charcoals. :D
+    public static final ItemHelper charcoalCharcoalCompressed = new ItemCharcoalCharcoalX2();
+    public static final ItemHelper charcoalCharcoalCompressedX2 = new ItemCharcoalCharcoalX3();
+    public static final ItemHelper charcoalCharcoalCompressedX3 = new ItemCharcoalCharcoalX4();
+
+
 
     public static void init()
     {
@@ -31,8 +39,12 @@ public class ModItems
             GameRegistry.registerItem(carrotCharcoal, Names.Items.CARROT_CHARCOAL);
             GameRegistry.registerItem(cactusCharcoal, Names.Items.CACTUS_CHARCOAL);
             GameRegistry.registerItem(charcoalCharcoal, Names.Items.CHARCOAL_CHARCOAL);
+            GameRegistry.registerItem(charcoalCharcoalCompressed, Names.Items.CHARCOAL_COMPRESSED);
+            GameRegistry.registerItem(charcoalCharcoalCompressedX2, Names.Items.CHARCOAL_COMPRESED_X2);
+            GameRegistry.registerItem(charcoalCharcoalCompressedX3, Names.Items.CHARCOAL_COMPRESED_X3);
+
         }
-        if (ConfigurationHelper.Realism) {
+        else {
             GameRegistry.registerItem(biofuelBits, Names.Items.BIOFUEL_BITS);
             GameRegistry.registerItem(biofuel, Names.Items.BIOFUEL);
         }

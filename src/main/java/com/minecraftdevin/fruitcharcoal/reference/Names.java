@@ -12,6 +12,10 @@ public final class Names {
         public static final String CHARCOAL_CHARCOAL = "charcoalCharcoal";
         public static final String BIOFUEL = "itemBiofuel";
         public static final String BIOFUEL_BITS = "itemBiofuelBits";
+        public static final String CHARCOAL_COMPRESSED = "charcoalCharcoalx2";
+        public static final String CHARCOAL_COMPRESED_X2 = "charcoalCharcoalx3";
+        public static final String CHARCOAL_COMPRESED_X3 = "charcoalCharcoalx4";
+
     }
 
     public static final class Blocks
