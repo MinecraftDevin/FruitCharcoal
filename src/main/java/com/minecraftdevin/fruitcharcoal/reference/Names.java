@@ -15,6 +15,10 @@ public final class Names {
         public static final String CHARCOAL_COMPRESSED = "charcoalCharcoalx2";
         public static final String CHARCOAL_COMPRESED_X2 = "charcoalCharcoalx3";
         public static final String CHARCOAL_COMPRESED_X3 = "charcoalCharcoalx4";
+        public static final String BROWN_FRUIT_CHARCOAL = "brownFruitCharcoal";
+        public static final String GREEN_FRUIT_CHARCOAL = "greenFruitCharcoal";
+        public static final String RED_FRUIT_CHARCOAL = "redFruitCharcoal";
+        public static final String SUPER_FRUIT_CHARCOAL = "superFruitCharcoal";
 
     }
 

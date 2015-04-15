@@ -40,3 +40,9 @@ tile.fruitcharcoal:watermelonDoubleCompressed.name=Double Compressed Melon Charc
 item.fruitcharcoal:charcoalCharcoalx2.name=Charcoal Charcoal Charcoal
 item.fruitcharcoal:charcoalCharcoalx3.name=Charcoal Charcoal Charcoal Charcoal
 item.fruitcharcoal:charcoalCharcoalx4.name=Charcoal Charcoal Charcoal Charcoal Charcoal
+
+#Fruit Charcoals
+item.fruitcharcoal:redFruitCharcoal.name=Red Fruit Charcoal
+item.fruitcharcoal:greenFruitCharcoal.name=Green Fruit Charcoal
+item.fruitcharcoal:brownFruitCharcoal.name=Brown Fruit Charcoal
+item.fruitcharcoal:superFruitCharcoal.name=Super Fruit Charcoal

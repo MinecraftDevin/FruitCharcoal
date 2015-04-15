@@ -2,9 +2,7 @@ package com.minecraftdevin.fruitcharcoal.init;
 
 import com.minecraftdevin.fruitcharcoal.Configuration.ConfigurationHelper;
 import com.minecraftdevin.fruitcharcoal.item.*;
-import com.minecraftdevin.fruitcharcoal.item.SpecialItems.ItemCharcoalCharcoalX2;
-import com.minecraftdevin.fruitcharcoal.item.SpecialItems.ItemCharcoalCharcoalX3;
-import com.minecraftdevin.fruitcharcoal.item.SpecialItems.ItemCharcoalCharcoalX4;
+import com.minecraftdevin.fruitcharcoal.item.SpecialItems.*;
 import com.minecraftdevin.fruitcharcoal.reference.Names;
 import com.minecraftdevin.fruitcharcoal.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -26,7 +24,11 @@ public class ModItems
     public static final ItemHelper charcoalCharcoalCompressed = new ItemCharcoalCharcoalX2();
     public static final ItemHelper charcoalCharcoalCompressedX2 = new ItemCharcoalCharcoalX3();
     public static final ItemHelper charcoalCharcoalCompressedX3 = new ItemCharcoalCharcoalX4();
-
+    // Fruit Charcoals
+    public static final ItemHelper brownFruitCharcoal = new ItemBrownFruitCharcoal();
+    public static final ItemHelper redFruitCharcoal = new ItemRedFruitCharcoal();
+    public static final ItemHelper greenFruitCharcoal = new ItemGreenFruitCharcoal();
+    public static final ItemHelper superFruitCharcoal = new ItemSuperFruitCharcoal();
 
 
     public static void init()
@@ -42,6 +44,10 @@ public class ModItems
             GameRegistry.registerItem(charcoalCharcoalCompressed, Names.Items.CHARCOAL_COMPRESSED);
             GameRegistry.registerItem(charcoalCharcoalCompressedX2, Names.Items.CHARCOAL_COMPRESED_X2);
             GameRegistry.registerItem(charcoalCharcoalCompressedX3, Names.Items.CHARCOAL_COMPRESED_X3);
+            GameRegistry.registerItem(brownFruitCharcoal, Names.Items.BROWN_FRUIT_CHARCOAL);
+            GameRegistry.registerItem(redFruitCharcoal, Names.Items.RED_FRUIT_CHARCOAL);
+            GameRegistry.registerItem(greenFruitCharcoal, Names.Items.GREEN_FRUIT_CHARCOAL);
+            GameRegistry.registerItem(superFruitCharcoal, Names.Items.SUPER_FRUIT_CHARCOAL);
 
         }
         else {
