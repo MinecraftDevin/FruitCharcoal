@@ -11,6 +11,7 @@ public class ConfigurationHelper
 {
     public static Configuration configuration;
     public static boolean Realism = true;
+    public static boolean RegisterEnergyValuesForBiofuel = true;
     public static int PotatoBiofuel = 2;
     public static int MelonBiofuel = 1;
     public static int PumpkinBiofuel = 5;
@@ -36,6 +37,7 @@ public class ConfigurationHelper
     private static void loadConfiguration()
     {
         Realism = configuration.getBoolean("Realism", Configuration.CATEGORY_GENERAL, true, "Enable this configuration option to change all the items to more realistic 'biofuel' versions.");
+        RegisterEnergyValuesForBiofuel = configuration.getBoolean("EE3 Energy Values", Configuration.CATEGORY_GENERAL, true, "Enable this to have Energy Values on biofuels.");
         PotatoBiofuel = configuration.getInt("Potato Biofuel Bits", Configuration.CATEGORY_GENERAL, 2, 1, 64,  "Configure the amount of biofuel bits Potatoes will give.");
         MelonBiofuel = configuration.getInt("Melon Biofuel Bits", Configuration.CATEGORY_GENERAL, 1, 1, 64, "Configure the amount of biofuel bits Melons will give.");
         PumpkinBiofuel = configuration.getInt("Pumpkin Biofuel Bits", Configuration.CATEGORY_GENERAL, 5, 1, 64, "Configure the amount of biofuel bits Pumpkins will give.");

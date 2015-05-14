@@ -1,0 +1,7 @@
+repositories {
+    mavenLocal()
+}
+
+dependencies {
+    compile "com.pahimar.ee3:EquivalentExchange3:1.7.10-0.3.505:dev"
+}
