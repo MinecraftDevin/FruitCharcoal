@@ -1,8 +1,18 @@
 repositories {
 	mavenCentral()
     mavenLocal()
+	maven {
+	    name "ChickenBones"
+        url "http://chickenbones.net/maven/"
+    }
+	maven {
+        name "Mobius"
+        url "http://mobiusstrip.eu/maven"
+    }
 }
 
 dependencies {
+	compile "mcp.mobius.waila:Waila:${waila_version}_${minecraft_version}:dev"
+	
     compile "com.pahimar.ee3:EquivalentExchange3:1.7.10-0.3.505:dev"
 }
